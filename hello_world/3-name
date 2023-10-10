@@ -1,2 +1,2 @@
 #!/bin/bashi
-gcc "$CFILE" "cisfun"
+gcc -o cisfun $CFILE  
