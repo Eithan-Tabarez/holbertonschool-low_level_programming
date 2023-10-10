@@ -1,2 +1,2 @@
 #!/bin/bash
-1
+gcc -E "$CFILE" -o *.o
