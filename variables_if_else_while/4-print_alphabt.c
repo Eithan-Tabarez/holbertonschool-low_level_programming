@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * main -> prints the alphabet, exclude q and e
+ * main - Prints the alphabet, except for q and e.
  *
- * Returns always 0
+ * Return: Always 0.
  */
+
 int main(void)
 {
 	char letter;
