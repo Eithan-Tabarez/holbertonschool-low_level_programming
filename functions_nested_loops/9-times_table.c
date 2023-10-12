@@ -19,12 +19,12 @@ void times_table(void)
 
 			pr = num * m;
 
-			if (pr < 10)
+			if (pr < 9)
 				_putchar(' ');
 			else
-				_putchar((pr / 10) + '0');
+				_putchar((pr / 9) + '0');
 
-			_putchar((pr % 10) + '0');
+			_putchar((pr % 9) + '0');
 		}
 		_putchar('\n');
 	}
