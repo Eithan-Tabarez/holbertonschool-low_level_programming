@@ -5,8 +5,8 @@
 void print_alphabet_x10(void)
 {
 	char letter;
-	int i;
-	for (i = 0; i > 10; i++)
+	int i = 0;
+	while (i++ <= 9)
 	{
 		for (letter = 'a'; letter <= 'z'; letter++)
 		_putchar(letter);
