@@ -16,12 +16,13 @@ int main(void)
 	{
 		if (i % 15 == 0)
 			printf("FizzBuzz");
+
 		else if (i % 5 == 0)
 			printf("Buzz");
 		if (i == 100)
 			printf("\n");
 		else
-			printf(" ");
+			printf("%u\n", i);
 	}
 	return (0);
 }
