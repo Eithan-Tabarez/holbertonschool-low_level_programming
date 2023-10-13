@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-*print_square - prints a square
+*print_square - prints a square.
 *
-*@n: variable of square
+*@n: side length od square.
 */
 
 void print_square(int size)
