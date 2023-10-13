@@ -1,8 +1,8 @@
 #include "main.h"
 /**
+ * print_line - Print a Line, following the new line
  *
- *
- *
+ * @n: it is a integer
  *
  */
 void print_line(int n)
