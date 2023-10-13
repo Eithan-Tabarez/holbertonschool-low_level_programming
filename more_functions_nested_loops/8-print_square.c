@@ -2,7 +2,7 @@
 /**
 *print_square - prints a square.
 *
-*@n: side length od square.
+*@size: side length od square.
 */
 
 void print_square(int size)
