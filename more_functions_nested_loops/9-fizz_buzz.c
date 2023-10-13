@@ -25,7 +25,7 @@ int main(void)
 		{
 			printf(" ");
 			printf("%u", i);
-		}	
+		}
 	}
 	return (0);
 }
