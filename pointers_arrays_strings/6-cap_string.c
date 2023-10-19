@@ -30,7 +30,7 @@ char *cap_string(char *q)
 				}
 			}
 		}
-	i++;	
+	i++;
 	}
 	return (q);
 }
