@@ -4,8 +4,8 @@
 * @a: array to be compare
 * @n: size of the array
 * Return: reversed array
-*
 */
+
 void reverse_array(int *a, int n)
 {
 	int swp, i, f;
