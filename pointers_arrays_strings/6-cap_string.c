@@ -31,4 +31,3 @@ char *cap_string(char *q)
 	}
 	return (q);
 }
-
