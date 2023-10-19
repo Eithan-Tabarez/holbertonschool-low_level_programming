@@ -23,7 +23,7 @@ char *cap_string(char *q)
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (a[j] == *(q + i))
+					if (a[j] == *(q + i - 1))
 					{
 						*(q + i) = *(q + i) - 32;
 					}
