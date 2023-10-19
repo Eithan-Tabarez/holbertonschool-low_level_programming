@@ -21,13 +21,16 @@ char *cap_string(char *q)
 			}
 			else
 			{
-				if (a[j] == *(q + i))
+				for (j = 0; j <= 12; j++)
 				{
-					*(q + i) = *(q + i) - 32;
+					if (a[j] == *(q + i))
+					{
+						*(q + i) = *(q + i) - 32;
+					}
 				}
 			}
+		i++;
 		}
-	i++;
+		return (q);
 	}
-	return (q);
 }
