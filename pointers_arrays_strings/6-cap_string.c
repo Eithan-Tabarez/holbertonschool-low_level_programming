@@ -31,6 +31,6 @@ char *cap_string(char *q)
 			}
 		i++;
 		}
-		return (q);
-	}
+	{
+	return (q);
 }
