@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strncpy - concatenate strings
+* _strchr - concatenate strings
 * @c: test a char
 * @s: source string
 *
