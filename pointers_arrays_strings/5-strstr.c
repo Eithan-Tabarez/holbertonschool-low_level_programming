@@ -29,12 +29,9 @@ int match(char *i, char *j)
 */
 char *_strstr(char *haystack, char *needle)
 {
-	char *h = haystack;
-	char *n = needle;
-
-	while (*h)
+	while (*haystack)
 	{
-		if ((*h == *n && match(haystack, needle) == 1) || !*n)
+		if ((*haystack == *needle && match(haystack, needle) == 1) || !*needle)
 		{
 			return (haystack);
 		}
