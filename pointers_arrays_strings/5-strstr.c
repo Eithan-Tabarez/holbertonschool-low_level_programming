@@ -8,16 +8,16 @@
 */
 int coincidence(char *a, char *b)
 {
-        while (*b && *b == *a)
-        {
-                b++;
-                a++;
-        }
+	while (*b && *b == *a)
+	{
+		b++;
+		a++
+	}
 
-        if (*b == '\0')
-                return (1);
-        else
-                return (0);
+	if (*b == '\0')
+		return (1);
+	else
+		return (0);
 }
 
 /**
