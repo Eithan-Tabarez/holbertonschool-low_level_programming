@@ -1,20 +1,20 @@
 #include "main.h"
 /**
-* coincidence - define if string is b inside a.
-* @a: source string
-* @b: string to be search
+* match - define if string is b inside a.
+* @i: source string
+* @j: string to be search
 *
 * Return: 1 or 0
 */
-int coincidence(char *a, char *b)
+int match(char *i, char *j)
 {
-	while (*b && *b == *a)
+	while (*j && *j == *i)
 	{
-		b++;
-		a++
+		j++;
+		i++;
 	}
 
-	if (*b == '\0')
+	if (*j == '\0')
 		return (1);
 	else
 		return (0);
@@ -29,9 +29,12 @@ int coincidence(char *a, char *b)
 */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	char *h = haystack;
+	char *n = needle;
+
+	while (*h)
 	{
-		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+		if ((*h == *n && match(haystack, needle) == 1) || !*n)
 		{
 			return (haystack);
 		}
