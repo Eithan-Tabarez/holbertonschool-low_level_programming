@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _sqrt_recursion - return sqrt of a number
+* sqrt_recursion - return sqrt of a number
 * @n: number.
 *
 * sqrt_m: calculate the sqrt of a num.
