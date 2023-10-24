@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* sqrt_m: calculate the sqrt
-* @n: number
-* @i: counter
+* sqrt_m: calculate the sqrt of a num.
+* @n: number.
+* @i: counter to be multipied.
 *
-* Return: sqrt
+* Return: sqrt 0.
 */
 int sqrt_m(int n, int i)
 {
