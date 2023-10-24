@@ -10,6 +10,22 @@
 * Return: sqrt 0.
 */
 
+int _sqrt_recursion(int n)
+{
+        if (n < 0)
+        {
+                return (-1);
+        }
+        else if (n == 0 || n == 1)
+        {
+                return (n);
+        }
+        else
+        {
+                return (sqrt_m(n, 1));
+        }
+}
+
 int sqrt_m(int n, int i)
 {
 	if (i * i == n)
@@ -18,21 +34,4 @@ int sqrt_m(int n, int i)
 		return (-1);
 	else
 		return (sqrt_m(n, i + 1));
-}
-
-
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		return (sqrt_m(n, 1));
-	}
 }
