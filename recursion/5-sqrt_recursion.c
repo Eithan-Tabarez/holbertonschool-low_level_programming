@@ -1,19 +1,4 @@
 #include "main.h"
-/**
-* _sqrt_recursion - return sqrt of a number
-* @n: number.
-*
-* Return: sqrt 0 if not natural.
-*/
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return(-1);
-	else if (n == 0 || n == 1)
-		return (n);
-	else
-		return (sqrt_m(n, 1));
-}
 
 /**
 * sqrt_m: calculate the sqrt
@@ -30,4 +15,27 @@ int sqrt_m(int n, int i)
 		return (-1);
 	else
 		return (sqrt_m(n, i + 1));
+}
+
+/**
+* _sqrt_recursion - return sqrt of a number
+* @n: number.
+*
+* Return: sqrt 0 if not natural.
+*/
+
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else if (n == 0 || n == 1)
+	{
+		return (n);
+	}
+	else
+	{
+		return (sqrt_m(n, 1));
+	}
 }
