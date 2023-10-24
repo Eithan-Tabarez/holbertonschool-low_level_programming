@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
-*
 * _sqrt_recursion - return sqrt of a number
 * @n: number.
 *
-* Return: sqrt 0 if not natural.
 * sqrt_m: calculate the sqrt of a num.
 * @n: number.
 * @i: counter to be multipied.
