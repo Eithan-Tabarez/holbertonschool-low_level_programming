@@ -1,12 +1,17 @@
 #include "main.h"
 
 /**
+*
+* _sqrt_recursion - return sqrt of a number
+* @n: number.
+*
+* Return: sqrt 0 if not natural.
 * sqrt_m: calculate the sqrt of a num.
 * @n: number.
 * @i: counter to be multipied.
-*
 * Return: sqrt 0.
 */
+
 int sqrt_m(int n, int i)
 {
 	if (i * i == n)
@@ -17,12 +22,6 @@ int sqrt_m(int n, int i)
 		return (sqrt_m(n, i + 1));
 }
 
-/**
-* _sqrt_recursion - return sqrt of a number
-* @n: number.
-*
-* Return: sqrt 0 if not natural.
-*/
 
 int _sqrt_recursion(int n)
 {
