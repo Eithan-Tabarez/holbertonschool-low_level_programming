@@ -1,25 +1,16 @@
 #include "main.h"
 
 /**
-* _strspn - print consecutive char
-* @s: source string
-* @accept: serch string
-*
-* Return: new string.
-*/
-unsigned int _strspn(char *s, char *accept)
+ * _isalpha - Checks if a character is alphabetic.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
+ */
+int _isalpha(int c)
 {
-	unsigned int i, j;
-
-	for (j = 0; *(s + j); j++)
-	{
-		for (i = 0; *(accept + i); i++)
-		{
-			if (*(s + j) == *(accept + i))
-				break;
-		}
-		if (*(accept + i) == '\0')
-			break;
-	}
-	return (j);
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }

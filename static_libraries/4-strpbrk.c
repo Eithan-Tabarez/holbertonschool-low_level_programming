@@ -1,25 +1,28 @@
 #include "main.h"
-
 /**
-* _strspn - print consecutive char
+* _strpbrk - print consecutive chars
 * @s: source string
-* @accept: serch string
+* @accept: search string
 *
 * Return: new string.
 */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 
-	for (j = 0; *(s + j); j++)
+	for (i = 0; *(s + i); i++)
 	{
-		for (i = 0; *(accept + i); i++)
+		for (j = 0; *(accept + j); j++)
 		{
-			if (*(s + j) == *(accept + i))
+			if (*(s + i) == *(accept + j))
+			{
 				break;
+			}
 		}
-		if (*(accept + i) == '\0')
-			break;
+		if (*(accept + j) != '\0')
+		{
+			return (s + i);
+		}
 	}
-	return (j);
+	return (0);
 }
