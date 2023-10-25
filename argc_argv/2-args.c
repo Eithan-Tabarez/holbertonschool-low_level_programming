@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints all arguments 
+ * main - Prints all arguments.
  * @argc: arguments supplied to the program.
  * @argv: array of pointers to the arguments.
  *
