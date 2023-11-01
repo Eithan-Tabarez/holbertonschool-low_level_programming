@@ -1,20 +1,20 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * Create_array - create a array
+ * create_array - create a array
  * @size : size of array
  * @c : char to intialize the array
  *
  * Return: Null or pointer to the array.
  */
-char *create_array(unsugned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *array;
 	unsigned int i;
 
 	if (size == 0)
 		return (NULL);
-	array = malloc(sideof(char) * size);
+	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
 		return (NULL);
