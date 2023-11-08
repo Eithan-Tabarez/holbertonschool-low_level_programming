@@ -2,18 +2,15 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - return the sum of all paramter
- * @n: number.
- * @...: variable number of parameters.
+ * sum_them_all - Returns the sum of all its paramters.
+ * @n: number of paramters
+ * @...: variable number
  *
- * return 0 or a sum.
+ * Return: = 0 or a sum
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == 0)
-		return (0);
-
 	va_list nums;
 	unsigned int i, sum = 0;
 
