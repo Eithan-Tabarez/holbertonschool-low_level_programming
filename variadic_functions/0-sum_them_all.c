@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - return sum
+ * sum_them_all - return the sum of all paramter
  * @n: number.
  * @...: variable number of parameters.
  *
@@ -11,6 +11,9 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
+	if (n == 0)
+		return (0);
+
 	va_list nums;
 	unsigned int index, sum = 0;
 
