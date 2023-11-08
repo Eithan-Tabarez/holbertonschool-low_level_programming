@@ -2,11 +2,11 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - return sum 
- * @n: number
- * @...: variable number of parameters
+ * sum_them_all - return sum.
+ * @n: number.
+ * @...: variable number of parameters.
  *
- * return 0 or a sum
+ * return 0 or a sum.
  */
 
 int sum_them_all(const unsigned int n, ...)
