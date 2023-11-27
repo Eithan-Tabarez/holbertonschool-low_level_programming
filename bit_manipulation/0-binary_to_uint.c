@@ -6,6 +6,7 @@
  *
  * Return: If b is NULL or contains chars not 0 or 1 - 0.
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0, mult = 1;
