@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Print a number. 
+ * main - Print a number.
  * Return: Always 0.
 */
 
