@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * puts2 - print one char out 2 of a string
 *
@@ -6,17 +7,11 @@
 */
 void puts2(char *str)
 {
-	int j, i;
+	int i = 0;
 
-	while (str[j] != '\0')
+	while (str[i] != '\0')
 	{
-		j++;
+		printf("%c\n", str[i]);
+		i += 2;
 	}
-
-	for (i = 0; i < j; i += 2)
-	{
-		_putchar(str[i]);
-	}
-
-	_putchar('\n');
 }
