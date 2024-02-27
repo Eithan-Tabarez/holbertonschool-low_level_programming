@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * puts2 - print one char out 2 of a string.
@@ -10,12 +10,12 @@ void puts2(char *str)
 {
 	int i, j;
 
-	while (str[i] != '\0'
+	while (str[j] != '\0')
 	{
 		j++;
 	}
 
-	for (i =0; i < j; i += 2)
+	for (i = 0; i < j; i += 2)
 	{
 		_putchar(str[i]);
 	}
