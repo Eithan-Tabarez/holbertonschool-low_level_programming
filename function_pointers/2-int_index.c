@@ -1,4 +1,4 @@
-#include "main.h"
+#include "function_pointers.h"
 /**
  * int_index - Searches integers in a array.
  * @array: The array.
