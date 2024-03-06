@@ -4,6 +4,11 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**
+ * struct printer - struct type defining a printer.
+ * @symbol: A symbol data type.
+ * @print: A function pointer to a function.
+ */
 typedef struct printer
 {
 	char *symbol;
