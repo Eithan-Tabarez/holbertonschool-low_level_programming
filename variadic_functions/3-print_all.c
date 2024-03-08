@@ -44,7 +44,7 @@ void print_all(const char *format, ...)
 	printf("\n");
 }
 
-int main()
+int main(void)
 {
 	char c = 'A';
 	int i = 123;
@@ -53,5 +53,5 @@ int main()
 
 	print_all("cifs", c, i, f, s);
 
-	return 0;
+	return (0);
 }
