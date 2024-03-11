@@ -62,7 +62,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (poppy == NULL)
 		return (NULL);
 
-	poppy->name = malloc(sizeof(char) * (strlen(name) + 1));
+	poppy->name = malloc(sizeof(char) * (_strlen(name) + 1));
 
 	if (poppy->name == NULL)
 	{
