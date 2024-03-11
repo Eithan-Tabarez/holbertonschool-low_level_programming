@@ -1,65 +1,43 @@
 #include "variadic_functions.h"
-/**
- * print_all - prints format output based on a format string and arguments.
- * args: A va_list object to hold variable arguments.
- * c, i, f: Temporary variables to store arguments.
- * s: A pointer to store string arguments.
- *
- * main - defines sample variables and calls print_all with a format string.
- */
 
-void print_all(const char *format, ...)
+void print_all(const char * const format, ...)
 {
-	va_list args;
-	const char *ptr;
-	char c;
-	int i;
-	float f;
-	char *s;
+    va_list args;
+    int i = 0;
+    char *s;
+    char c;
+    float f;
 
-	va_start(args, format);
+    va_start(args, format);
 
-	for (ptr = format; *ptr != '\0'; ptr++)
-	{
-		c = *ptr;
-		switch (c)
-		{
-			case 'c':
-				i = va_arg(args, int);
-				printf("%c", i);
-				break;
-			case 'i':
-				i = va_arg(args, int);
-				printf("%d", i);
-				break;
-			case 'f':
-				f = (float)va_arg(args, double);
-				printf("%f", f);
-				break;
-			case 's':
-				s = va_arg(args, char *);
-				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
-				break;
-			default:
-				break;
-		}
-	}
+    while (format && format[i])
+    {
+        switch (format[i])
+        {
+            case 'c':
+                c = va_arg(args, int);
+                printf("%c", c);
+                break;
+            case 'i':
+                printf("%d", va_arg(args, int));
+                break;
+            case 'f':
+                printf("%f", va_arg(args, double));
+                break;
+            case 's':
+                s = va_arg(args, char *);
+                if (s == NULL)
+                    printf("(nil)");
+                else
+                    printf("%s", s);
+                break;
+        }
+        if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's') && format[i + 1] != '\0')
+            printf(", ");
+        i++;
+    }
 
-	va_end(args);
-	printf("\n");
-}
+    va_end(args);
 
-int main(void)
-{
-	char c = 'A';
-	int i = 123;
-	float f = 3.14;
-	char *s = NULL;
-
-	print_all("cifs", c, i, f, s);
-
-	return (0);
+    printf("\n");
 }
