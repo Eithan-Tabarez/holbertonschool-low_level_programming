@@ -76,7 +76,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int i = 0, j = 0;
 	char *separator = "";
-	format_function_pair funcs[] =
+	printer_t funcs[] =
 	{
 		{"c", print_char},
 		{"i", print_int},
