@@ -1,4 +1,11 @@
 #include "variadic_functions.h"
+/**
+ * print_all - prints format output based on a format string and arguments.
+ * args: A va_list object to hold variable arguments.
+ * c, i, f: Temporary variables to store arguments.
+ * s: A pointer to store string arguments.
+ *
+ */
 
 void print_all(const char * const format, ...)
 {
@@ -6,7 +13,9 @@ void print_all(const char * const format, ...)
     int i = 0;
     char *s;
     char c;
+	float f;
 
+	void f;
     va_start(args, format);
 
     while (format && format[i])
