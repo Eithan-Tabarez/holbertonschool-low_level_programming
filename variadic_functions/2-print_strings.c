@@ -4,7 +4,7 @@
  * print_strings - Prints strings.
  * @separator: The string to be printed between strings.
  * @n: number of strings.
- * @...: A variable number.
+ * @...: variable number.
  *
  */
 
